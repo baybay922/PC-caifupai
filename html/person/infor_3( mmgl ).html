@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" /> 
+<title></title>
+
+<link rel="stylesheet" type="text/css" href="../../css/index.css" /><!-- index css -->
+<link rel="stylesheet" type="text/css" href="../../css/style.css" /><!-- style css -->
+<script type="text/javascript" src="../../js/jquery.min.js"></script><!-- jquery 类库 javascript -->
+<script type="text/javascript" src="../../js/infor_3.js"></script><!-- public javascript -->
+<script type="text/javascript" src="../../js/public.js"></script><!-- public javascript -->
+<script type="text/javascript" src="../../js/ed_ex_psd.js"></script><!-- public javascript -->
+<script>
+    $(function(){
+    	$(".id_edit").click(function(){
+			if($(this).html()=="修改"){
+			$(this).parents("ul.mmgl_ul").next().slideDown(500).siblings(".mmgl_show").slideUp(500);
+				$(this).html("取消");
+				$(this).parents("ul.mmgl_ul").siblings("ul").find("a.id_edit").html("修改");
+			}else{
+			$(this).parents("ul.mmgl_ul").next().slideUp(500).siblings(".mmgl_show").slideUp(500);
+				$(this).html("修改");
+				$(this).parents("ul.mmgl_ul").siblings("ul").find("a.id_edit").html("修改");
+			}	
+		});
+		$(".id_edit2").click(function(){
+			$(".mmgl_show").slideUp(500);
+			$(".id_edit").html("修改");
+		});
+		$(".id_edit3").click(function(){
+			$(".mmgl_show").slideUp(500);
+			$(".id_edit").html("修改");
+		});
+		
+    });
+	
+</script>
+</head>
+
+<body>
+	<input type="hidden" id="hidem" data-value="545247000" />
+	<!-- header start -->
+	<!-- navtopbg start-->
+		<div class="toplink clearFloat">
+			<div class="wrapper">
+				<div class="floatLeft">
+					<ul class="topright floatRight">
+						<li class="borderright"><img src="../../images/new_icon/user_name.png" /><a href="login.html">user2015</a>&nbsp;&nbsp; |</li>
+						<li><img src="../../images/new_icon/user_05.png" /><a href="register.html">退出账号</a></li>
+					</ul>
+				</div>
+				<ul class="topright floatRight">
+					<li class="borderright"><a href="login.html">帮助中心</a></li>
+					<li><a href="register.html">新手引导</a></li>
+					<li class="ml-20"><img src="../../images/new_icon/kefu.png" /><a href="help/help_index.html">客服热线 400-061-8080 （9:00-21:00）</a></li>
+				</ul>
+			</div>
+		</div><!-- navtopbg end-->
+		<!-- navindex start -->
+		<div class="navindex">
+			<div class="wrapper">
+				<div class="navleft">
+					<img src="../../images/new_icon/logo.png" />
+				</div>
+				<ul class="navright">
+					<li class="active"><a href="../index3.html">首页</a></li>
+					<li><a href="../financeList.html">我要借款</a></li>
+					<li><a href="person1.html">账户中心</a></li>
+					<li><a href="#">关于我们</a></li>
+				</ul>
+			</div>	
+		</div><!-- navindex end -->
+	<!-- header end -->
+<div class="wrapper">
+	<div class="user_center_le">
+		<div class="user_center_le_up">
+			<div class="user_cenle_img">
+				<div class="user_cenle_img_le"><img src="../../images/user-center/user_01.png" /></div>
+				<div class="user_cenle_img_ri">
+					<ul>
+						<a href=""><li class="user_img01"></li></a>
+						<a href=""><li class="user_img02"></li></a>
+						<a href=""><li class="user_img03"></li></a>
+					</ul>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="user_name">
+				<span>用户名</span>
+				<span>1234567</span>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="user_hello">
+				<div class="user_hl_le">上午好！</div>
+				<div class="user_hl_ri"><a href="">退出账号</a></div>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="user_time">
+				<p>上次登录时间：</p>
+				<p>2015-08-01 06:58:39</p>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="user_btn">
+				<a href="person2( cz ).html"><button class="user_btn_le">￥ 充值</button></a>
+				<a href="infor_4( yqhy ).html"><button class="user_btn_ri">邀请好友</button></a>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="menu" id="menu">
+			<div class="menu_mains">
+				<span class="user_center_index"><a href="person1.html">账户中心首页</a></span>
+			</div>
+			<div class="menu_main">
+					<p class="p_down">我的理财</p>
+					<ul style="display:block">
+						<li><a href="infor_6( cjxq ).html">出借债权</a></li>
+						<li><a href="">理财计划</a></li>
+					</ul>
+			</div>
+			<div class="menu_main">
+				<p class="p_down">资金管理</p>
+				<ul style="display:block">
+					<li><a href="fund_zj( zjgl ).html">资金流水</a></li>
+					<li><a href="infor_7( ddcx ).html">订单查询</a></li>
+					<li><a href="person2( cz ).html">充值</a></li>
+					<li><a href="person3( tx ).html">提现</a></li>
+					<li><a href="person4( cfq ).html">财富券</a></li>
+					<li><a href="person5.1( yhkgl2 ).html">银行卡管理</a></li>
+				</ul>
+			</div>
+			<div class="menu_main active_le">
+				<p class="p_down">账户设置</p>
+				<ul style="display:block">
+					<li><a href="infor_8( jbzl ).html">基本资料</a></li>
+					<li><a href="infor_5( yzxx ).html">验证信息</a></li>
+					<li><a href="infor_3( mmgl ).html" class="active_acolor">密码管理</a></li>
+					<li><a href="infor_1( xxgl ).html">消息管理</a></li>
+					<li><a href="infor_4( yqhy ).html">邀请好友</a></li>
+				</ul>   
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+	</div>
+	<div class="user_center_ri">
+	<!-- tabp end -->
+		<div class="tab pre_cjzq" id="table2">
+			<div class="pre_tabtitle user_mima_gl">
+				<h2>密码管理</h2>
+			</div>
+			<div class="pre_zqlist mt-10">
+				<ul class="mmgl_ul">
+					<li class="mmgl_ul_450">登陆密码</li>
+					<li class="mmgl_ul_100">已设置</li>
+					<li class="mmgl_ul_150"><a class="id_edit" href="#">修改</a></li>
+				</ul>
+				<div class="mmgl_show display-none">
+					<form action="" class="form" method="post">
+						<div class="input_box">
+							<label>
+								<span>原密码</span>
+								<input type="password" id="password_1" value="" maxlength="16" placeholder="请输入原密码" />
+							</label>
+							<em></em>
+						</div>
+						<div class="input_box">
+							<label>
+								<span>新密码</span>
+								<input type="password" id="password_2" value="" maxlength="16" placeholder="请输入新密码"  onKeyUp="CheckIntensity(this.value)" />
+								
+							</label>
+							<em></em>
+						</div>
+						<div class="input_box">
+							<label>
+								<span>确认密码</span>
+								<input type="password" id="password_3" value="" maxlength="16" placeholder="请再次输入新密码"  />
+							</label>
+							<em></em>
+						</div>
+						<div class="mmgl_btn">
+							<button type="button" id="submit-findpwd22" >确认修改</button><a href="#" class="id_edit2">取消</a>
+						</div>
+					</form>
+				</div>
+                <!-- masklayer start  -->
+				<div class="zhezhao2" style="display:none;"></div>
+				<div class="masklayer masklback" id="ed_ex_psd">
+					<!-- <div class="xiugai_phone"> -->
+						<h2 class="clearFloat"><span>找回交易密码</span><a href="javascript:;" data-id="close"></a></h2>
+						<div class="xiugai_phone_main" id="xigai1">
+							<img src="../../images/ed_ex_psd1.jpg" class="mt-30 mb-30"/>
+							<form action="" class="form" method="post">
+								<div class="input_box_phone">
+									<label>
+										<span>绑定的手机号码</span>
+										<i class="tal ex-plone">137****4971</i>
+										<input type="hidden" id="ex_phone" value="13720024971" autocomplete="off"/>
+									</label>
+									<em></em>
+								</div>
+								<div class="input_box_phone">
+									<label>
+										<span>手机验证码</span>
+										<input type="text" id="valid" autocomplete="off" maxlength="6" placeholder="请输入验证码" />
+										<button type="button" id="ex_get_valid" class="huoqu_yanzm" >获取验证码</button>
+									</label>
+									<em></em>
+								</div>
+								<p style="width:425px;text-align:right;"><a href="http://help.caifupad.com/guide/common/reg/" target="_black" style="text-decoration:none;">收不到验证码？</a></p>
+								<div class="input_box_phone ipt_box_phone">
+									<button type="button" id="next_sub1">下一步</button>
+								</div>
+							</form>
+						</div>
+						<div class="xiugai_phone_main display-none" id="phone_d2">
+							<img src="../../images/ed_ex_psd2.jpg" class="mt-30 mb-30"  />
+							<form action="" class="form" method="post">
+									<div class="input_box_phone input_box">
+										<label>
+											<span>输入新交易密码</span>
+											<input type="password" class="width200" id="ed_ex_psd1" value="" maxlength="16" style="width:160px;" autocomplete="off" onKeyUp="ed_ex_Check(this.value)" />
+												
+												<div type="button" id="rejc_ex_psd" class="Tcolor floatLeft">无</div>
+										</label>
+										<em class="hui">交易密码为6 -16 位字符，支持字母及数字,字母区分大小写</em>
+									</div>
+									<div class="input_box_phone">
+										<label>
+											<span>再次输入新交易密码</span>
+											<input type="password" class="width200" id="ed_ex_psd2" value="" maxlength="16" autocomplete="off" />
+										</label>
+										<em></em>
+									</div>
+									<div class="input_box_phone ipt_box_phone">
+										<button type="button" id="next_sub2">下一步</button>
+									</div>
+							</form>
+						</div>
+						<div class="xiugai_phone_main display-none" id="phone_d3">
+								
+							<img src="../../images/ed_ex_psd3.jpg" class="mt-30 mb-30" />
+							<p class="mt-50"><img src="../../images/img/true.jpg" /><span>交易密码重置成功！</span></p>
+								
+							<div class="input_box_phone ipt_box_phone" style="margin-top:85px;">
+								<a href="javascript:;" id="ed_ex_psda"><button>确认</button></a>
+							</div>
+						</div>
+					<!-- </div> -->
+				</div>
+				<!-- masklayer end -->
+				<div class="zhezhao1"></div>
+        		<ul class="mmgl_ul">
+					<li class="mmgl_ul_450">交易密码</li>
+					<li class="mmgl_ul_100" id="wei_sz"><span>未设置</span></li>
+					<li class="mmgl_ul_150"><a href="javascript:;" class="id_edit">修改</a><a id="ed_ex_psdad" class="ml-30" href="#">找回</a></li>
+				</ul>
+				<div class="mmgl_show display-none">
+					<form action="" class="form" method="post">
+						<div class="input_box">
+							<label>
+								<span>原交易密码</span>
+								<input type="password" id="jiaoyi_1" value="" maxlength="16" placeholder="请输入原密码"  />
+							</label>
+							<em></em>
+						</div>
+						<div class="input_box">
+							<label>
+								<span>新交易密码</span>
+								<input type="password" id="jiaoyi_2" value="" maxlength="16" placeholder="请输入新密码"  onKeyUp="CheckIntensity2(this.value)" />
+								
+							</label>
+							<em></em>
+						</div>
+						<div class="input_box">
+							<label>
+								<span>确认交易密码</span>
+								<input type="password" id="jiaoyi_3" value="" maxlength="16" placeholder="请再次输入新密码"  />
+							</label>
+							<em></em>
+						</div>
+						<div class="mmgl_btn">
+							<button type="button" id="submit-jiaoyi" >确认修改</button><a href="#" class="id_edit3">取消</a>
+						</div>
+					</form>
+				</div>
+				<div class="clear_50"></div>
+			</div>
+		</div>
+	</div>
+</div>	
+<div class="clear_100"></div>
+	
+<div class="zhezhao"></div>
+<div class="zhezhao1"></div>
+<!-- masklayer start  -->
+<div class="masklayer" id="login">
+	<div class="logind">
+	<h2><span>登录财富派</span> <a href="javascript:;" class="logina" data-id="close"></a></h2>
+             <!-- equity start -->
+            <div class="login">
+                <form action="" method="get" name="form" class="">
+                    <div class="input-group">
+                        <label for="username">
+                            <input type="text" value="" id="unlogin" maxlength="20" name="username" placeholder="用户名/手机号" class="ipt-input" />
+                        </label>
+                        <em class="hui"></em>
+                    </div>
+                    <div class="input-group clearFloat">
+                        <label for="password">
+                            <input type="password" value="" id="pwlogin" maxlength="16" name="password" placeholder="密码" class="ipt-input" />
+                        </label>
+                        <em class="passwordem floatLeft"></em><a class="write floatRight passworda mr-10"  href="re_password1.html">忘记密码？</a>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" id="submit-login" class="btn btn-error mt-0">登录</button>
+                        <a class="write floatRight passworda mr-10" href="register.html">账号</a>
+                    </div>
+                </form>
+                
+            </div><!-- equity start -->
+</div>
+</div><!-- masklayer end -->
+<!-- footerindex start -->
+	<div class="footer">
+		<div class="bottom3">
+			<div class="wrapper">
+				<ul class="footer-ul">
+					<h3>关于我们</h3>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">关于我们</a></li>
+				</ul>
+				<ul class="footer-ul">
+					<h3>关于我们</h3>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">关于我们</a></li>
+				</ul>
+				<ul class="footer-ul">
+					<h3>联系我们</h3>
+					<li>客服热线&nbsp;&nbsp;<b>400-000-6151</b></li>
+					<li>客服邮箱&nbsp;&nbsp;<a href="#" class="footer-email">service@mayitz.com</a></li>
+					<li>北京市朝阳区光华路SOHO2期B座11层</li>
+				</ul>
+			</div>
+			<div class="clear_0"></div>
+			<div class="wrapper">
+				<hr class="footer-line" />
+				<div class="b4">
+					<span class="b41"><i></i></span>
+					<span class="b42"><i></i></span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="wrapper">
+			<div class="footer-left">京ICP备14056341号  汇聚融达网络科技有限公司</div>
+			<div class="footer-right">© 2015 财富派 All rights reserved</div>
+		</div>
+	</div>
+<!-- footerindex end -->
+</body>
+</html>

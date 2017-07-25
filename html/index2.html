@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link href="/images/favicon.ico" rel="shortcut icon">
+<link href="/images/favicon.ico" rel="Bookmark">
+<meta name="keywords" content="" />
+<meta name="description" content="" /> 
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=7;IE=9;IE=8;IE=10;IE=11"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+<title>财富派</title>
+
+<link rel="stylesheet" type="text/css" href="../css/index.css" /><!-- index css -->
+<link href="../css/index_new/style.css" rel="stylesheet" type="text/css">
+<link href="../css/cxm_index.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="../css/index_new/media.css" /><!-- index css -->
+<script type="text/javascript" src="../js/jquery.min.js"></script><!-- jquery 类库 javascript -->
+<script type="text/javascript" src="../js/index_new/index.js"></script>
+<script type="text/javascript" src="../js/public.js"></script>
+<script type="text/javascript" src="../js/index_new/index_person.js"></script>
+<script type="text/javascript" src="../js/index_new/jquery.SuperSlide.js"></script>
+
+<link href="../css/index_new/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/index_new/jquery.jplayer.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+    $("#jquery_jplayer_3").jPlayer({
+        ready: function () {
+            $(this).jPlayer("setMedia", {
+                
+                m4v: "http://www.caifupad.com/zt/vedio2.mp4",
+                ogv: "http://www.caifupad.com/zt/vedio2.mp4",
+                webmv: "http://www.caifupad.com/zt/vedio2.mp4",
+                poster: "http://www.jplayer.org/video/poster/Finding_Nemo_Teaser_640x352.png"
+            });
+        },
+        play: function() { // To avoid multiple jPlayers playing together.
+            $(this).jPlayer("pauseOthers");
+        },
+        swfPath: "../../dist/jplayer",
+        supplied: "webmv, ogv, m4v",
+        cssSelectorAncestor: "#jp_container_3",
+        globalVolume: true,
+        useStateClassSkin: true,
+        autoBlur: false,
+        smoothPlayBar: true,
+        keyEnabled: true
+    });
+});
+//]]>
+</script>
+
+</head>
+
+<body>
+
+<!-- dSidebar start -->
+<div class="dSidebar">
+	<ul class="uSide">
+    	<li class="lSare"><em class="eml12"><i class="il12"></i></em>
+        	<div class="dlScar dshow"><img src="../images/index_new/index_19.jpg" />财富派官方微信</div>
+        </li>
+    	<li class="lPhone"><em class="eml12"><i class="il12"></i></em>
+            <div class="dlScar dshow"><img src="../images/index_new/ad.jpg" />财富派APP下载</div>
+        </li>
+    	<li class="lCal" id="jsqimg1"><em class="eml12"><i class="il12"></i></em>
+        <!-- jsq start -->
+<div class="indexjsp dshow">
+        <div class="jsq dshow" id="jsqdiv1">
+            <h2 class="clearFloat"><span data-id="bor1" class="action">出借计算</span><span data-id="bor2">借款计算</span></h2>
+            <!-- borjs start -->
+            <div class="borjs tab" id="bor1">
+                <div class="clearFloat ifselct">
+                    <span class="input-group tal floatLeft ml-60">
+                        <i class="ipt_i floatLeft">请输入出借金额：</i><label><input type="text" placeholder="输入出借金额" id="borrmon1" class="ipt-input"/></label>
+                         <br /><em class="floatLeft tal mt-5 ml-113">&nbsp;</em>
+                    </span>
+                    <div class="clear"></div>
+                    <span>
+                        <!-- select start -->
+                        <dl class="select" id="rate_Type1">
+                            <dt id="0" data-id="1">周期付息</dt>
+                            <dd>
+                               <ul>
+                                   <li data-id="1"><a href="javascript:;">周期付息</a></li>
+                                   <li data-id="3"><a href="javascript:;">到期还本</a></li>
+                               </ul>
+                            </dd>
+                        </dl><!-- select end -->
+                         <em class="tal">&nbsp;</em>
+                    </span>
+                    <span>
+                        <!-- select start -->
+                        <dl class="select" id="brate">
+                            <dt id="0" data-id="1">15%</dt>
+                            <dd>
+                               <ul>
+                                   <li data-id="1"><a href="javascript:;">15%</a></li>
+                                   <li data-id="3"><a href="javascript:;">12%</a></li>
+                               </ul>
+                            </dd>
+                        </dl><!-- select end -->
+                         <em class="tal">&nbsp;</em>
+                    </span>
+                    <span>
+                        <!-- select start -->
+                        <dl class="select" id="bdata">
+                            <dt id="0" data-id="1">1期</dt>
+                            <dd>
+                                <ul>
+                                    <li data-id="1"><a href="javascript:;">1期</a></li>
+                                    <li data-id="3"><a href="javascript:;">3期</a></li>
+                                </ul>
+                            </dd>
+                        </dl><!-- select end -->
+                        <em class="tal">&nbsp;</em>
+                    </span>
+                </div>
+                
+                <div class="btn-group mb-30">
+                    <button type="button" id="bormonbtn3" class="btn btn-error mt-0">计算</button>
+                    <a href="javascript:;" class="btn btn-gray mt-0 closejsq">关闭</a>
+                </div>
+                <!-- bbordetail start -->
+                <div class="bbordetail borrd2">
+                    <div class="bbdil">
+                    <p class="tac firstb">计算结果</p>
+                    <p class="clearFloat"><span class="floatLeft">出借金额</span><span class="floatRight"><i id="">100.00</i>元</span></p>
+                    <p class="clearFloat"><span class="floatLeft">获得利息</span><span class="floatRight"><i id="">100.00</i>元</span></p>
+                    <p class="clearFloat"><span class="floatLeft">回款总额</span><span class="floatRight"><i id="" class="c_red">100.00</i>元</span></p>
+                    <p class="tac firstb"><a href="#">查看详细&gt;</a></p>
+                    <p class="tac"> <a href="#" id="subbor" class="btn btn-error">我要出借</a></p>
+                    </div>
+                    <div class="clear"></div>
+                </div><!-- bbordetail end -->
+            </div><!-- borjs end -->
+            <!-- loanjs start -->
+            <div class="borjs tab display-none" id="bor2">
+                <div class="clearFloat ifselct" >
+                    <span class="input-group">
+                        <label><input type="text" placeholder="输入借款金额" id="loanmoney" class="ipt-input" style="height:28px;line-height:28px;" /></label>
+                        <br /><em class="tal">&nbsp;</em>
+                    </span>
+                    <span>
+                      <!-- select start -->
+                      <dl class="select hei30" id="mdata2" style="height:30px;">
+                          <dt id="0" data-id="0">选择借款期数</dt>
+                          <dd>
+                             <ul>
+                                 <li data-id="1"><a href="javascript:;">1期</a></li>
+                                 <li data-id="3"><a href="javascript:;">3期</a></li>
+                             </ul>
+                          </dd>
+                      </dl><!-- select end -->
+                      <em class="tal">&nbsp;</em>
+                    </span>
+                    <span>
+                        <!-- select start -->
+                        <dl class="select" id="rate_Type2" style="height:30px;">
+                            <dt id="0" data-id="0">付息类型</dt>
+                            <dd>
+                               <ul>
+                                   <li data-id="1"><a href="javascript:;">周期付息</a></li>
+                                   <li data-id="3"><a href="javascript:;">到期还本</a></li>
+                               </ul>
+                            </dd>
+                        </dl><!-- select end -->
+                         <em class="tal">&nbsp;</em>
+                    </span>
+                </div>
+                <div class="btn-group mb-30">
+                    <button type="button" id="monborr2" class="btn btn-error mt-0">计算</button>
+                    <a href="javascript:;" class="btn btn-gray mt-0 closejsq">关闭</a>
+                </div>
+                <!-- bbordetail start -->
+                <div class="bbordetail bor2">
+                    <div class="bbdil">
+                    
+                        <p class="tac firstb">计算结果</p>
+                        <p class="clearFloat"><span class="floatLeft">借款金额</span><span class="floatRight"><i id="">100.00</i>元</span></p>
+                        <p class="clearFloat"><span class="floatLeft">借款总成本（利息+平台服务费）</span><span class="floatRight"><i id="">100.00</i>元</span></p>
+                        <!--
+                        <p class="clearFloat"><span class="floatLeft">月还款额</span><span class="floatRight"><i id="" class="c_red">100.00</i>元</span></p>-->
+                        <p class="clearFloat"><span class="floatLeft">还款总额</span><span class="floatRight"><i id="" class="c_red">100.00</i>元</span></p>
+                        <p class="tac"> <a href="#" id="subbor2" class="btn btn-error">我要出借</a></p>
+                    </div>
+                </div><!-- bbordetail end -->
+            </div><!-- loanjs end -->
+            <!-- bbordetail start -->
+            <div class="hengtiao">
+                <img src="../images/jsq_07.jpg" />
+            </div>
+            <!-- bbordetail end -->
+        </div>
+        <!-- jsq end -->
+</div>
+        </li>
+    	<li class="lPerson"><em class="eml12"><i class="il12"></i></em>
+        	<ul class="ulPersonInfo dshow">
+            	<li class="ulfirst clearFloat"><img src="../images/index_new/indexperson_19.png" /><a href="#">Xiaolilian</a></li>
+            	<li><a href="#">账户余额<br /><font color="#e72d4c">665,990</font>元</a></li>
+            	<li><a href="#">我的订单</a></li>
+            	<li class="lrestuxi"><a href="#" class="ared">充值</a><a href="#">提现</a></li>
+            	<li class="llast"><a href="#">退出</a></li>
+            </ul>
+        </li>
+        <li class="lMassage"><em class="eml12"><a href="#"><i class="il12"> <label>1</label></i></a></em></li>
+    	<li class="lTop display-none" id="lTop"><em class="eml12"><i class="il12"></i></em></li>
+    </ul>
+</div>
+<!-- dSidebar end -->
+
+<!-- linktop start -->
+<div class="linktop"> <!--container2-->
+	<div class="container  clearFloat">
+    	<ul class="uWelcome clearFloat">
+        	<li class="lFirst linknone">欢迎来到财富派</li>
+            <li><a href="#" class="a_333">登录</a></li>
+            <li><a href="#" class="a_333">注册</a></li>
+            <li class="linknone"><a href="#" class="a_333">帮助中心</a></li>
+            <li class="linknone"><a href="#" class="a_333">新手引导</a></li>
+        </ul>
+        <ul class="uSevers">
+        	<li>客服热线：400-888-8888</li>
+        	<li class="linknone">客服时间：09:00－21:00</li>
+        </ul>
+    </div>
+</div>
+<!-- linktop end -->
+
+<!-- header start -->
+<div class="header">
+	<div class="container  clearFloat">
+    	<div class="dlogo">
+        	<a href="#"><img src="../images/index_new/logo_03.png" /></a>
+            <i></i>
+        </div>
+        <div class="dNav clearFloat">
+
+        	<ul class="uNav">
+                <li><a class="aaction" href="javascript:;">首页</a></li>
+                <li><a href="javascript:;">我要理财</a></li>
+            	<li><a href="javascript:;">我要借款</a></li>
+            	<li><a href="javascript:;">账户中心</a></li>
+            	<li><a href="javascript:;">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- header end -->
+<div class="clear"></div>
+<!-- index_focus start -->
+<div class="index_focus clearFloat">
+	<a href="javascript:;" class="index_focus_pre" title="上一张">上一张</a>
+	<a href="javascript:;" class="index_focus_next" title="下一张">下一张</a>
+	
+	<div class="bd">
+		<ul>
+            <!-- -->
+			<li style="background:url(../images/index_new/index_02.png) center center no-repeat;">
+				<a href="http://www.caifupad.com" target="_blank" class="pic">
+                    
+                    <img src="../images/index_new/index_02.png" class="myimgid" alt="">
+				</a>
+			</li>
+            <li style="background:url(../images/index_new/index_02.png) center center no-repeat; display:none">
+                <a href="http://www.caifupad.com" target="_blank" class="pic">
+                    <img src="../images/index_new/index_02.png" class="myimgid" alt="">
+
+                </a>
+            </li>
+		</ul>
+	</div>
+	
+	<div class="slide_nav">
+		<a href="javascript:;">●</a>
+		<a href="javascript:;">●</a>
+	</div>
+</div>
+<!-- index_focus end -->
+
+<!-- sRollNotice start -->
+<div class="sRollNotice">
+	<div class="dposiabso container">
+        <!-- deye start -->
+        <div class="dEye transformAll">
+            <ul class="uEye">
+                <li class="lfirst">推荐产品</li>
+                <li class="ltitle">550万个人房抵第十五期</li>
+                <li class="lyear clearFloat"><span class="syear">预期年化收益</span><span class="srat " ><code class="timer"  data-id="cont-number" data-to="12" data-speed="1500">12</code><small>%+</small>1<small>%奖</small></span></li>
+                <li class="laccound la1 clearFloat">
+                    <span>Marilyn Monroe,欢迎回来</span>
+                    <a href="javascript:;">退出</a>
+                </li>
+                <li class="laccound la2 clearFloat">
+                    <span>账户余额：120,000元</span>
+                    <a href="javascript:;">充值</a>
+                </li>
+                <!--<li class="laccound la3 clearFloat">
+                     <span class="sl1">累计出借：150,000元</span>
+                    <span class="sl2">累计收益：7,000元</span> 
+                </li>-->
+                
+
+               <!--  <li class="lbuttom"><a href="#" class="btn btn-error">免费注册</a></li>
+                <li class="laccount">已有账号，<a href="#" class="">立即登录</a></li>
+                 -->
+                <li class="lsum NotLogin"><!-- NotLogin 2015-->
+                    <span class="ssumleft">平台累计出借<br />
+                    <big class="timer" id="cont-number2" data-to="896660.78" data-speed="1500">896,660.78</big>元
+                    </span>
+                    <span class="ssumright">为用户赚取<br /><big class="timer" id="count-number3" data-to="66552.14" data-speed="1500">665,990.52</big>元</span>
+                </li>
+            </ul>
+        </div>
+        <!-- deye end -->
+        <div class="dagreen display-none">
+            <i></i>
+            <ul>
+                <li class=""><a href="#">· iPhone6S找到主人！来围观10月活动获奖</a></li>
+                <li class=""><a href="#">· iPhone6S找到主人！来围观10月活动获奖</a></li>
+                <li class=""><a href="#">· iPhone6S找到主人！来围观10月活动获奖</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- sRollNotice end -->
+
+<!-- dBodyIndex start -->
+<div class="dBodyIndex">
+	<div class="container clearFloat">
+    
+    	<!-- dLeft start -->
+    	<div class="dLeft clearFloat">
+        
+        	<div class="dsafe clearFloat">
+            	<span class="sone"><i></i><code>高额收益<small>34倍银行存款利息</small></code></span>
+            	<span class="ssecond"><i></i><code>安全保障<small>全方位保障资金安全</small></code></span>
+            	<span class="sthird"><i></i><code>帮助中心<small>帮您解决常见问题</small></code></span>
+            </div>
+            
+            <!-- dFinancePlan start -->
+            <div class="dFinancePlan clearFloat">
+            	<h2 class="clearFloat"><span>理财计划<small>Financial planning </small></span><a href="#">更多>></a></h2>
+
+                <ul class="uFinTitle clearFloat">
+                	<li class="lone">项目名称</li>
+                	<li class="ltwo">年化利率</li>
+                	<li class="lthree">借款期限</li>
+                	<li class="lfore">起投金额</li>
+                	<li class="lfifle">&nbsp;</li>
+                </ul>
+                <ul class="uFinList clearFloat">
+                	<li class="lone"><i class="iLi"></i><a href="#">理财计划 D001期</a></li>
+                	<li class="ltwo"><em class="eyearm"></em>12%+1%</li>
+                	<li class="lthree">1个月</li>
+                	<li class="lfore">1000元</li>
+                	<li class="lfifle"><a href="#" class="btn awriteBtn">已满标</a></li>
+                </ul>
+                <ul class="uFinList clearFloat">
+                    <li class="lone"><i class="iLi"></i><a href="#">理财计划 D001期</a></li>
+                	<li class="ltwo"><em class="eyearm"></em>12%</li>
+                	<li class="lthree">1个月</li>
+                	<li class="lfore">1000元</li>
+                	<li class="lfifle"><a href="#" class="btn aredBtn">立即加入</a></li>
+                </ul>
+            </div>
+            <!-- dFinancePlan end -->
+            
+            <!-- dImmeLend start -->
+            <div class="dFinancePlan clearFloat">
+            	<h2 class="clearFloat"><span>立即出借<small>Immediately lend </small></span><a href="#">更多>></a></h2>
+                <ul class="uFinTitle clearFloat">
+                	<li class="lone">借款标题</li>
+                	<li class="ltwo">年化利率</li>
+                	<li class="lthree">借款期限</li>
+                	<li class="lfore">起投金额</li>
+                	<li class="lfifle">&nbsp;</li>
+                </ul>
+                <ul class="uFinList clearFloat">
+                	<li class="lone"><i class="iJie"></i><a>个人房抵第四期</a></li>
+                	<li class="ltwo"><em class="eyearm"></em>12%</li>
+                	<li class="lthree">1个月</li>
+                	<li class="lfore">500万</li>
+                	<li class="lfifle"><a href="#" class="btn awriteBtn">已满标</a></li>
+                </ul>
+                <ul class="uFinList clearFloat">
+                    <li class="lone"><i class="iJie"></i><a>个人房抵第四期</a></li>
+                	<li class="ltwo"><em class="eyearm"></em>12%</li>
+                	<li class="lthree">5个月</li>
+                	<li class="lfore">500万</li>
+                	<li class="lfifle"><a href="#" class="btn aredBtn">立即加入</a></li>
+                </ul>
+                <ul class="uFinList clearFloat">
+                    <li class="lone"><i class="iJie"></i><a>个人房抵第四期</a></li>
+                	<li class="ltwo"><em class="eyearm"></em>12%</li>
+                	<li class="lthree">5个月</li>
+                	<li class="lfore">500万</li>
+                	<li class="lfifle"><a href="#" class="btn aredBtn">立即加入</a></li>
+                </ul>
+                <ul class="uFinList clearFloat">
+                	<li class="lone"><i class="iJie"></i>个人房抵第四期</li>
+                	<li class="ltwo"><em class="eyearm"></em>12%</li>
+                	<li class="lthree">5个月</li>
+                	<li class="lfore">500万</li>
+                	<li class="lfifle"><a href="#" class="btn aredBtn">立即加入</a></li>
+                </ul>
+            </div>
+            <!-- dFinancePlan end -->
+        </div>
+        <!-- dLeft end -->
+        <!-- dRight start -->
+    	<div class="dRight">
+        	<div class="dNewGuide">
+            <a href="#" class="alooknew"></a>
+            <!--
+
+                <h2>新手引导</h2>
+                <p>理财年化收益高达<big>15</big>%</p>
+                <a href="#" class="a999">更多>></a>
+            -->
+            </div>
+            <div class="dNewPaper">
+            	<h2 class="clearFloat"><span class="sTitle">最新公告</span><a href="#" class="a999">更多>></a></h2>
+                <ul class="uContext">
+                	<li><a href="#">关于易宝快捷支付限额调整公告</a></li>
+                	<li><a href="#">财富派网银支付通道正式上线</a></li>
+                    <li><a href="#">iPhone6S找到主人！来围观10月活动获奖</a></li>
+                	<li><a href="#">iPhone6S找到主人！来围观10月活动获奖</a></li>
+                </ul>
+            </div>
+            <div class="dVedio"><!--iVedio-->
+                <i id="iVedio"></i>
+                <!-- <a href="index_vedio.html"><i id=""></i></a> -->
+               
+
+            </div>
+            <div class="dNewsQuesion">
+            	<h2 class="clearFloat"><span class="sOne saction stab" data-id="dNews">平台新闻</span><span class="sTwo stab" data-id="dQuestion">常见问题</span></h2>
+                <!-- dNews start -->
+                <div class="dNews" id="dNews">
+                	<div class="dNewsTitle clearFlaot">
+                    	<img src="../images/index_new/index_15.png" />
+                        <span class="sNew-group">
+                            <p class="pOne"><a  href="#" target="_blank">财富派天津店开业</a></p>
+                            <p class="ptwo"><a href="#"target="_blank">互联网金融不是互联合，而是在实现安全......</a></p>
+                            <p class="pThree">1天前 阅读（3830）</p>
+                        </span>
+                    </div>
+
+                    <ul class="uNewsList clearFloat">
+                    	<li class="lTitle"><a href="#"target="_blank">财富派官网蚂蚁投资CEO...</a></li>
+                        <li class="lTime">2015-11-19</li>
+                    	<li class="lTitle"><a href="#"target="_blank">财富派官网蚂蚁投资CEO...</a></li>
+                        <li class="lTime">2015-11-19</li>
+                    	<li class="lTitle"><a href="#"target="_blank">财富派官网蚂蚁投资CEO...</a></li>
+                        <li class="lTime">2015-11-19</li>
+                        <li class="lLookMore"><a href="#"target="_blank">更多>></a></li>
+                    </ul>
+                </div>
+                <!-- dNews end -->
+                <!-- dNews start -->
+                <div class="dNews display-none" id="dQuestion">
+                	<div class="dNewsTitle">
+                    	<img src="../images/index_new/index_15.png" />
+                        <span class="sNew-group">
+                            <p class="pOne"><a href="#" target="_blank">互联网金融</a></p>
+                            <p class="ptwo"><a href="#" target="_blank">互联网金融不是互联网和金融业的简单结合，而是在实现安全.........</a></p>
+                            <p class="pThree">1天前 阅读（3830）</p>
+                        </span>
+                    </div>
+                    <ul class="uNewsList">
+                    	<li class="lTitle"><a href="#" target="_blank">河北邯郸加盟 扩充京津冀版图..</a></li>
+                        <li class="lTime">2015-11-19</li>
+                    	<li class="lTitle"><a href="#" target="_blank">河北邯郸加盟 扩充京津冀版图...</a></li>
+                        <li class="lTime">2015-11-19</li>
+                    	<li class="lTitle"><a href="#" target="_blank">河北邯郸加盟 扩充京津冀版图...</a></li>
+                        <li class="lTime">2015-11-19</li>
+                        <li class="lLookMore"><a href="#" target="_blank">更多>></a></li>
+                    </ul>
+                </div>
+                <!-- dNews end -->
+            </div>
+        </div>
+        <!-- dRight end -->
+    </div>
+</div>
+<!-- dBodyIndex end -->
+
+<!-- dBottom start -->
+<div class="dBottom">
+	<div class="container clearFloat">
+    	<ul class="uTimDru clearFloat">
+        	<li class="ltitle">联系我们</li>
+        	<li class="lone">400-888-8888</li>
+        	<li class="ltwo"><a href="myservice@mayitz.com" target="_blank">myservice@mayitz.com</a></li>
+        	<li>服务时间： 9:00~21:00</li>
+        	<!-- <li class="ladd"><a href="#" class="a1"></a><a href="#" class="a2"></a></li> -->
+        </ul>
+        <ul class="uScan">
+        	<li class="ltitle"><a href="http://www.caifupad.com/about" target="_blank">关于我们</a></li>
+        	<li><a href="http://www.caifupad.com/about" target="_blank"><a href="#" target="_blank">团队介绍</a></li>
+            <li><a href="http://www.caifupad.com/about" target="_blank">合作伙伴</a></li>
+            <!-- <li><a href="#" target="_blank">御金资本</a></li> -->
+        </ul>
+        <ul class="uScan">
+            <li class="ltitle"><a href="http://help.caifupad.com/" target="_blank">帮助中心</a></li>
+            <li><a href="http://help.caifupad.com/guide/common/reg/" target="_blank">常见问题</a></li>
+            <li><a href="http://help.caifupad.com/notice/" target="_blank">网站公告</a></li>
+            <li><a href="http://help.caifupad.com/news/" target="_blank">平台新闻</a></li>
+        </ul>
+		<ul class="uScan uscanlat">
+            <li class="ltitle"><a href="http://www.xn--iorw51ad9b0v3f.com" target="_blank">友情链接</a></li>
+            <li><a href="http://www.wdzj.com/" target="_blank">网贷之家</a></li>
+			<li><a href="http://www.p2peye.com/" target="_blank">网贷天眼</a></li>
+            <li><a href="http://www.wdlm.cn/" target="_blank">网贷联盟网</a></li>
+            <li><a href="http://www.xtrich.com/" target="_blank">信德过</a></li>
+            <li><a href="http://www.wangdaishequ.cn/" target="_blank">网贷社区</a></li>
+            
+        </ul>
+        <ul class="uServer clearFloat">
+        	<li><i class="iweixin"></i>关注财富派官方微信<br />了解财富派大事件<br /><!-- <span href="#" class="gz_bg1"></span> --></li>
+        	<li><i class="iweibo"></i>关注财富派官方微博<br />带你赚钱带你飞<br /><a href="http://weibo.com/cfpai" class="gz_bg2" target="_blank"></a></li>
+        </ul>
+    </div>
+</div>
+<!-- dBottom end -->
+
+<!-- dPut start -->
+<div class="dPut">
+    <div class="container clearFloat">
+        <span class="floatLeft clearFloat">
+            <i class="ichengxin"></i>
+            <i class="ixin"></i>
+        </span>
+        <span class="floatRight">
+            京ICP备14051030号 Copyright 2015 caifupad.com,All Rights Reserved
+        </span>
+    </div>
+</div>
+<!-- dPut end -->
+
+        <div class="zhezhao1"></div>
+<!-- masklayer start  -->
+<div class="masklayer videogroup" id="vediogroup" style="width:888px; background:#000; top:8%;">
+   
+        <i class="close" data-id="close">×</i>
+   <!-- jp_container_3 start -->
+<div id="jp_container_3" class="jp-video jp-video-888p" role="application" aria-label="media player">
+    
+    <div class="jp-type-single">
+        <div id="jquery_jplayer_3" class="jp-jplayer"></div>
+        <div class="jp-gui">
+            <div class="jp-video-play">
+                <button class="jp-video-play-icon" role="button" tabindex="0">play</button>
+            </div>
+            <div class="jp-interface">
+                <div class="jp-progress">
+                    <div class="jp-seek-bar">
+                        <div class="jp-play-bar"></div>
+                    </div>
+                </div>
+                <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                <div class="jp-controls-holder">
+                    <div class="jp-controls">
+                        <button class="jp-play" role="button" tabindex="0">play</button>
+                        <button class="jp-stop" role="button" tabindex="0">stop</button>
+                    </div>
+                    <div class="jp-volume-controls">
+                        <button class="jp-mute" role="button" tabindex="0">mute</button>
+                        <button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+                        <div class="jp-volume-bar">
+                            <div class="jp-volume-bar-value"></div>
+                        </div>
+                    </div>
+                    <div class="jp-toggles">
+                        <button class="jp-repeat" role="button" tabindex="0">repeat</button>
+                        <button class="jp-full-screen" role="button" tabindex="0">full screen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- jp_container_3 end -->
+</div>
+<!-- masklayer end -->
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".index_focus").hover(function(){
+		$(this).find(".index_focus_pre,.index_focus_next").stop(true, true).fadeTo("show", 1)
+	},function(){
+		$(this).find(".index_focus_pre,.index_focus_next").fadeOut()
+	});
+	$(".index_focus").slide({
+		titCell: ".slide_nav a ",
+		mainCell: ".bd ul",
+		delayTime: 500,
+		interTime: 3500,
+		prevCell:".index_focus_pre",
+		nextCell:".index_focus_next",
+		effect: "fold",
+		autoPlay: true,
+		trigger: "click",
+		startFun:function(i){
+			$(".index_focus_info").eq(i).find("h3").css("display","block").fadeTo(1000,1);
+			$(".index_focus_info").eq(i).find(".text").css("display","block").fadeTo(1000,1);
+		}
+	});
+
+});
+</script>
+<script type="text/javascript" src="../js/index_new/index2.js"></script>
+
+<script>
+//当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+$(function () {
+    $(window).scroll(function(){
+        if ($(window).scrollTop()>100){
+            $("#lTop").fadeIn(500);
+        }
+        else{
+            $("#lTop").fadeOut(500);
+        }
+    });
+    //当点击跳转链接后，回到页面顶部位置
+    $("#lTop").click(function(){
+        $('body,html').animate({scrollTop:0},1000);
+    return false;
+    });
+});
+
+</script> 
+</body>
+</html>

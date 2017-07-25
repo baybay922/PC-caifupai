@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta charset="utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" /> 
+
+<title></title>
+
+<link rel="stylesheet" type="text/css" href="../css/index.css" /><!-- index css -->
+<link rel="stylesheet" type="text/css" href="../css/index_new/new.css" />
+<script type="text/javascript" src="../js/jquery.min.js"></script><!-- jquery 类库 javascript -->
+<script type="text/javascript" src="../js/fDData.js"></script><!-- jquery_page javascript 分页 -->
+<script type="text/javascript" src="../js/login.js"></script><!-- login javascript -->
+<script type="text/javascript" src="../js/public.js"></script><!-- public javascript -->
+<script type="text/javascript" src="../js/financeList.js"></script><!-- financeList javascript -->
+<script type="text/javascript" src="../js/jquery_page.js"></script><!-- jquery_page javascript 分页 -->
+<script type="text/javascript" src="../js/bottomAlays.js"></script><!-- jquery_page javascript 分页 -->
+<script type="text/javascript" src="../js/index_new/index3.js"></script><!-- jquery_page javascript 分页 -->
+</head>
+
+<body class="position-rela">
+<!-- header start -->
+<!-- navtopbg start-->
+<div class="toplink position-rela-zindex clearFloat">
+    <div class="wrapper">
+        <div class="floatLeft">
+            <ul class="topright floatRight">
+                <li class="borderright"><img src="../images/new_icon/user_name.png" /><a href="login.html">user2015</a>&nbsp;&nbsp; |</li>
+                <li><img src="../images/new_icon/user_05.png" /><a href="register.html">退出账号</a></li>
+            </ul>
+        </div>
+        <ul class="topright floatRight">
+            <li class="borderright"><a href="help/help_index.html">帮助中心</a></li>
+            <li><a href="register.html">新手引导</a></li>
+            <li class="ml-20"><img src="../images/new_icon/kefu.png" /><a href="help/help_index.html">客服热线 400-061-8080 （9:00-21:00）</a></li>
+        </ul>
+    </div>
+</div><!-- navtopbg end-->
+<!-- navindex start -->
+<div class="navindex position-rela-zindex">
+    <div class="wrapper">
+        <div class="navleft">
+            <a href="index3.html"><img src="../images/new_icon/logo.png" /></a>
+        </div>
+        <ul class="navright">
+            <li class="active"><a href="index3.html">首页</a></li>
+            <li><a href="financeList.html">我要借款</a></li>
+            <li><a href="person/person1.html">账户中心</a></li>
+             <li><a href="about.html">关于我们</a></li>
+        </ul>
+    </div>  
+</div><!-- navindex end -->
+<!-- header end -->
+<!-- dSidebar start -->
+<div class="thSidebar">
+    <ul class="uSides">
+        <li class="lSare"><em></em></li>
+        <li class="lCal"><em></em></li>
+        <li class="lPhone"><em></em></li>
+        <li class="lPerson"><em></em>
+           <!--
+             <ul class="thPerson">
+                <li class="thimg"><img src="../images/index_new/banner_Idx/index5_03.png" alt=""></li>
+                <li class="tha"><a href="#"><img src="../images/index_new/banner_Idx/index_new6_03.jpg" alt=""></a></li>
+            </ul>
+           -->
+            <ul class="thPerson display-none">
+                <li class="thimg"><img src="../images/index_new/banner_Idx/index5_03.png" alt=""></li>
+                <li class="thPcon">账户余额(元) <i>11，000.00</i></li>
+                <li class="thMyOrder">
+                    <a href="" class="a2gray666"><i></i>我的订单</a>
+                </li>
+                <li class="thReches">
+                    <a href="" class="a2gray666"><i></i>充值</a>
+                </li>
+                <li class="thWidth">
+                    <a href="" class="a2gray666"><i></i>提现</a>
+                </li>
+                <!--
+                <li class="thWidth">
+                    <i></i>提现
+                </li>
+                -->
+            </ul>
+        </li>
+        <li class="lTop display-none" id="lTop"><em></em></li>
+    </ul>
+</div>
+<!-- dSidebar end -->
+<!-- ftitle start -->
+<div class="ftitle">
+	<h2 class="clearFloat">
+    	<ul class="tabul wrapper">
+        	<li data-id="tab2" class="hengicon action ">P2P出借列表<i></i></li>
+            <li class="zheicon" data-id="tab1">理财产品列表<i></i></li>
+        </ul>
+    </h2>
+</div><!-- ftitle end -->
+
+    <!-- tab start -->
+    <div class="tab finproject display-none" id="tab1" >
+    	<!-- fdheng start -->
+    	<div class="fdheng">
+        	<!-- fdif start -->
+        	<div class="fdif wrapper clearFloat">
+            	<span class="firstsp fdsp">付息类型</span>
+                <!-- select start -->
+		        <dl class="select" class="zindex" id="Ftype">
+                    <dt data-id="0">全部</dt>
+                    <dd>
+                       <ul>
+                           <li data-id="0"><a href="javascript:;">全部</a></li>
+                           <li data-id="1"><a href="javascript:;">周期付息</a></li>
+                       </ul>
+                    </dd>
+		        </dl><!-- select end -->
+            	<span class="fdsp">封闭期</span>
+                    <!-- select start -->
+                    <dl class="select" class="zindex" id="cloperiod">
+                        <dt data-id="0">全部</dt>
+                        <dd>
+                           <ul>
+                               <li data-id="0"><a href="javascript:;">全部</a></li>
+                               <li data-id="3"><a href="javascript:;">3个月</a></li>
+                               <li data-id="6"><a href="javascript:;">6个月</a></li>
+                               <li data-id="12"><a href="javascript:;">12个月</a></li>
+                           </ul>
+                        </dd>
+                    </dl><!-- select end -->
+            	<span class="fdsp">预期收益</span>
+  
+                  <!-- select start -->
+                  <dl class="select mr-5" id="expectpay">
+                      <dt data-id="0">全部</dt>
+                      <dd>
+                         <ul>
+                             <li data-id="0"><a href="javascript:;">全部</a></li>
+                             <li data-id="15"><a href="javascript:;">15%</a></li>
+                             <li data-id="12"><a href="javascript:;">12%</a></li>
+                             <li data-id="9"><a href="javascript:;">9%</a></li>
+                         </ul>
+                      </dd>
+                  </dl><!-- select end -->
+                  <button type="button" id="selectbtn" class="btn btn-blue mt-0 widselect" class="selectbtn">查询</button>
+            </div><!-- fdif end -->
+
+            <!-- pai start -->
+            <div class="pai wrapper clearFloat">
+            	<span class="firstsp tal">排序：</span>
+                <div class="uldiv">
+                    <a href="javascript:;" data-value="0" data-id="yqsort" class="xiala">预期收益</a>
+                </div>
+                <div class="uldiv">
+               	 <a href="javascript:;" data-value="0" data-id="fbsort" class="xiala xiala2">封闭期</a>
+                </div>
+                
+            </div><!-- pai end -->
+        </div><!-- fdheng start -->
+        
+        <div class="wrapper" id="financeProject">
+        <!-- flcontext start -->
+        <div class="flcontext flcontexthover clearFloat">
+        	<!-- flleft start -->
+        	<div class="flleft">
+            	<div class="clearFloat">
+                    <span class="title"><a href="financeDetail3.html">新手引引导引志导 </a></span>
+                    <span class="nian"><img src="../images/fd_27.png" /><label>年化利率<em class="big lilv">12<small>%</small></em></label></span>
+                    <span class="feng"><img src="../images/fd_32.png"><label>封闭期<br /><i>10</i>分钟</label></span>
+                    <span class="faxing"><img src="../images/fd_29.png"><label>发行期数<br /><i>XTB20150001</i></label></span>
+            	</div>
+            	<p class="cut_str mt-20">是陆金所网站平台推出的个人投融资服务。陆金所向投资方（投资人）和融资方，帮助双方快捷方便地完成投资和投和方</p>
+            </div><!-- flleft end -->
+        
+        	<!-- flright start -->
+        	<div class="flright">
+            	<p>本期剩余金额：1,000,000元</p> 
+                <div class="input-group">
+            	    <input type="hidden" class="borrowday" data-value="1" /><!-- 周期付息 -->
+            	    <input type="hidden" data-id="closePeriod" data-value="3" /><!-- 封闭期 -->
+            	    <input type="hidden" data-id="periodPay" data-value="15" /><!-- 预期收益 % -->
+                    <label>
+                        <input type="text" value=""  placeholder="输入理财金额" class="ipt-input"/><i class="yuan1">元</i>
+                    </label>
+                    <em></em>
+                </div>
+                <div class="lookdetail clearFloat">
+                    <a href="financeDetail.html" class="ablue">查看产品详情</a>
+      				<button type="button" data-id="licai" class="btn btn-error flbtn mt-0"><img src="../images/images/icon_03.png" class=" mt-10 mr-5" />去支付</button>
+                </div>
+            </div><!-- flright end -->
+            
+        </div><!-- flcontext start -->
+        <!-- flcontext start -->
+        <div class="flcontext clearFloat">
+        
+        	<!-- flleft start -->
+        	<div class="flleft mt-10">
+            	<div class="clearFloat">
+            	<span class="title"><a href="financeDetail3.html">新手引引导引志导 </a></span>
+            	<span class="nian"><img src="../images/fd_27.png" /><label>年化利率<em class="big lilv">12<small>%</small></em></label></span>
+            	<span class="feng"><img src="../images/fd_32.png"><label>封闭期<br /><i>10</i>分钟</label></span>
+            	<span class="faxing"><img src="../images/fd_29.png"><label>发行期数<br /><i>XTB20150001</i></label></span>
+            	</div>
+            	<p class="cut_str mt-20">是陆金所网站平台推出的个人投融资服务。陆金所向投资方（投资人）和融资方，帮助双方快捷方便地完成投资和投和方</p>
+            </div><!-- flleft end -->
+        
+        	<!-- flright start -->
+        	<div class="flright">
+            	<p>本期剩余金额：1,000,000元</p>
+                <div class="input-group">
+            	    <input type="hidden" class="borrowday" data-value="2" /><!-- 周期付息 -->
+            	    <input type="hidden" data-id="closePeriod" data-value="6" /><!-- 封闭期 -->
+            	    <input type="hidden" data-id="periodPay" data-value="15" /><!-- 周期付息 % -->
+                    <label>
+                        <input type="text" placeholder="输入理财金额" class="ipt-input"/><i class="yuan1">元</i>
+                    </label>
+                    <em></em>
+                </div>
+                <div class="lookdetail clearFloat">
+                    <a href="financeDetail.html" class="ablue">查看产品详情</a>
+      				<button type="button" data-id="licai" class="btn btn-error flbtn mt-0"><img src="../images/images/icon_03.png" class=" mt-10 mr-5" />去支付</button>
+                </div>
+            </div><!-- flright end -->
+            
+        </div><!-- flcontext start -->
+        <!-- flcontext start -->
+        <div class="flcontext fllast clearFloat">
+        
+        	<!-- flleft start -->
+        	<div class="flleft mt-10">
+            	<div class="clearFloat">
+            	<span class="title"><a href="financeDetail3.html">蚂蚁蛋</a></span>
+            	<span class="nian"><img src="../images/fd_27.png" /><label>年化利率<em class="big lilv">12<small>%</small></em></label></span>
+            	<span class="feng"><img src="../images/fd_32.png"><label>封闭期<br /><i>10</i>分钟</label></span>
+            	<span class="faxing"><img src="../images/fd_29.png"><label>发行期数<br /><i>XTB20150001</i></label></span>
+            	</div>
+            	<p class="cut_str mt-20">是陆金所网站平台推出的个人投融资服务。陆金所向投资方（投资人）和融资方，帮助双方快捷方便地完成投资和投和方</p>
+            </div><!-- flleft end -->
+        
+        	<!-- flright start -->
+        	<div class="flright">
+            	<p>本期剩余金额：1,000,000元</p>
+                <div class="input-group">
+            	    <input type="hidden" class="borrowday" data-value="2" /><!-- 周期付息 -->
+            	    <input type="hidden" data-id="closePeriod" data-value="12" /><!-- 封闭期 -->
+            	    <input type="hidden" data-id="periodPay" data-value="9" /><!-- 周期付息 % -->
+                    <label>
+                        <input type="text" placeholder="输入理财金额" class="ipt-input"/><i class="yuan1">元</i>
+                    </label>
+                    <em></em>
+                </div>
+                <div class="lookdetail clearFloat">
+                    <a href="financeDetail.html" class="ablue">查看产品详情</a>
+      				<button type="button" data-id="licai" class="btn flbtn btn-error mt-0"><img src="../images/images/icon_03.png" class=" mt-10 mr-5" />去支付</button>
+                </div>
+            </div><!-- flright end -->
+            
+        </div><!-- flcontext start -->
+        </div>
+    </div><!-- tab 
+        <div class="tac mt-30">
+        	<img src="../images/jqqdnone.jpg" />
+        </div>end -->
+    <!-- tab start -->
+    <div class="tab finproject" id="tab2">
+    	
+    	<!-- fdheng start -->
+    	<div class="fdheng fdheng2">
+        	<!-- fdif start -->
+        	<div class="fdif wrapper clearFloat">
+            	<span class="firstsp fdsp">付息类型：</span>
+                
+                <!-- select start -->
+                <dl class="select_new" class="zindex">
+                    <dt class="daction" id="0">全部</dt>
+                    <dd>
+                       <ul>
+                           <li data-id="7"><a href="javascript:;" class="">信贷</a></li>
+                           <li data-id="8"><a href="javascript:;">房贷</a></li>
+                           <li data-id="9"><a href="javascript:;">企业车企</a></li>
+                           <li data-id="9"><a href="javascript:;">企业信贷</a></li>
+                           <li data-id="9"><a href="javascript:;">企业保理</a></li>
+                       </ul>
+                    </dd>
+                </dl><!-- select end -->
+            </div><!-- fdif end -->
+            <!-- fdif start -->
+            <div class="fdif wrapper clearFloat">
+            	<span class="fdsp">借款期限：</span>
+                
+                <!-- select start -->
+                <dl class="select_new" class="zindex">
+                    <dt class="daction">全部</dt>
+                    <dd id="0">
+                       <ul>
+                           <li data-id="9"><a href="javascript:;">1个月</a></li>
+                           <li data-id="10"><a href="javascript:;">2个月</a></li>
+                           <li data-id="10"><a href="javascript:;">3个月</a></li>
+                           <li data-id="10"><a href="javascript:;">4个月</a></li>
+                           <li data-id="10"><a href="javascript:;">5个月</a></li>
+                       </ul>
+                    </dd>
+                </dl><!-- select end -->
+            </div><!-- fdif end -->
+            <!-- fdif start -->
+            <div class="fdif wrapper clearFloat">
+            	<span class="fdsp">预期收益：</span>
+                
+                <!-- select start -->
+                <dl class="select_new mr-5">
+                    <dt class="daction">全部</dt>
+                    <dd id="0">
+                       <ul>
+                           <li data-id="11"><a href="javascript:;">15%</a></li>
+                           <li data-id="12"><a href="javascript:;">12%</a></li>
+                           <li data-id="12"><a href="javascript:;">10%</a></li>
+                           <li data-id="12"><a href="javascript:;">8%</a></li>
+                           <li data-id="12"><a href="javascript:;">9%</a></li>
+                       </ul>
+                    </dd>
+                </dl><!-- select end -->
+                <!--<button type="button" class="btn btn-blue mt-0">查询</button>-->
+            </div><!-- fdif end -->
+            <!-- pai start -->
+            <div class="pai wrapper clearFloat">
+            	<span class="firstsp tal">排序：</span>
+                <div class="uldiv">
+                    <a href="javascript:;" class="xiala">预期收益</a>
+                </div>
+                <div class="uldiv">
+               	 <a href="javascript:;" class="xiala xiala2">封闭期</a>
+                </div>
+                <div class="uldiv">
+               	 <a href="javascript:;" class="xiala">信用等级</a>
+                </div>
+            </div><!-- pai end -->
+        </div><!-- fdheng start -->
+        <div class="fltitle mt-10">
+        
+            <ul class="dltitleul wrapper">
+                <li class="sp1 tac">借款标题</li>
+                <li class="sp2">年化利率</li>
+                <li class="sp3">借款期限</li>
+                <li class="sp4">借款金额</li>
+                <li class="sp5">信用等级</li>
+                <li class="sp6"> 借款进度</li>
+            </ul>
+        </div>
+        <!-- flcontext2 start -->
+        <div class="flcontext2 wrapper">
+        
+        </div><!-- flcontext2 end -->
+
+        <div class="wrapper">
+            <div class="tcdPageCode">
+            </div>
+        </div>
+    </div><!-- tab end -->
+    
+<div class="zhezhao"></div>
+<div class="zhezhao1"></div>
+<!-- masklayer start  -->
+<div class="masklayer masklback" id="licai">
+	<h2 class="clearFloat"><span>购买理财</span><a href="javascript:;" data-id="close"></a></h2>
+             <!-- equity start -->
+            <div class="flbuy">
+            	<p class="clearFloat"><span class="fsp1">理财产品：</span>  <span class="fsp2" id="title"></span></p>
+                <p class="clearFloat"><span class="fsp1">购买金额：</span>  <span class="fsp2"><big  class="c_red"><i id="buymoney">10,000.00</i></big>元</span></p>
+                <p class="clearFloat"><span class="fsp1">预期收益：</span>  <span class="fsp2"><small id="expected" class="c_red">300.05</small>元</span></p>
+                <p class="clearFloat"><span class="fsp1">账户余额：</span>  <span class="fsp2"><small id="account">15,690.05</small>元</span></p>
+                <form action="" method="get" name="form" class=" mt-20">
+                	
+        	<div class="input-group">
+            	<label for="password">
+            		<span class="fsp1">交易密码：</span>
+                	<input type="password" value="" id="jypassword"  name="password" placeholder="请输入交易密码" class="ipt-input" />
+                </label>
+                <em class="ml-90"></em>
+            </div>
+        	<div class="input-group">
+            	<label for="checkBox">
+                	<input type="checkbox" name="checkBox" id="checkBox" checked class="mr-5 ml-90 ipt-check" /><a href="javascript:;" class="ahui">《信通宝理财产品购买协议》</a>  <a class="ahui" href="javascript:;">《用户委托理财产品协议》</a>
+                </label>
+                <em class=" ml-90"></em>
+            </div>
+                    <div class="groupbtn clearFloat">
+                        <label>
+                            <button type="button" class="btn btn-error ml-90 mt-0" id="repay">确认支付</button>
+                        </label>
+                        <label>
+                            <button type="button" class="btn btn-write ml-20 mt-0">使用其它方式支付</button>
+                        </label>
+                    </div>
+                </form>
+                
+            </div><!-- equity start -->
+    
+</div><!-- masklayer end -->
+
+<!-- masklayer start  -->
+<div class="masklayer" id="login">
+	<div class="logind">
+	<h2><span>登录财富派</span> <a href="javascript:;" class="logina" data-id="close"></a></h2>
+             <!-- equity start -->
+            <div class="login">
+                <form action="" method="get" name="form" class="">
+                    <div class="input-group">
+                        <label for="username">
+                            <input type="text" value="" id="unlogin" maxlength="20" name="username" placeholder="用户名/手机号" class="ipt-input" />
+                        </label>
+                        <em class="hui"></em>
+                    </div>
+                    <div class="input-group clearFloat">
+                        <label for="password">
+                            <input type="password" value="" id="pwlogin" maxlength="16" name="password" placeholder="密码" class="ipt-input" />
+                        </label>
+                        <em class="passwordem floatLeft"></em><a class="write floatRight passworda mr-10"  href="re_password1.html">忘记密码？</a>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" id="submit-login" class="btn btn-error mt-0">登录</button>
+                        <a class="write floatRight passworda mr-10" href="register.html">账号</a>
+                    </div>
+                </form>
+                
+            </div><!-- equity start -->
+</div>
+</div><!-- masklayer end -->
+    
+<!-- footerindex start -->
+<div class="footer clearFloat">
+    <div class="bottom3">
+        <div class="wrapper">
+            <ul class="footer-ul">
+                <h3>关于我们</h3>
+                 <li><a href="about.html">关于我们</a></li>
+                 <li><a href="about.html">关于我们</a></li>
+                 <li><a href="about.html">关于我们</a></li>
+            </ul>
+            <ul class="footer-ul">
+                <h3>关于我们</h3>
+                 <li><a href="about.html">关于我们</a></li>
+                 <li><a href="about.html">关于我们</a></li>
+                 <li><a href="about.html">关于我们</a></li>
+            </ul>
+            <ul class="footer-ul">
+                <h3>联系我们</h3>
+                <li>客服热线&nbsp;&nbsp;<b>400-000-6151</b></li>
+                <li>客服邮箱&nbsp;&nbsp;<a href="#" class="footer-email">service@mayitz.com</a></li>
+                <li>北京市朝阳区光华路SOHO2期B座11层</li>
+            </ul>
+        </div>
+        <div class="clear_0"></div>
+        <div class="wrapper">
+            <hr class="footer-line" />
+            <div class="b4">
+                <span class="b41"><i></i></span>
+                <span class="b42"><i></i></span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="wrapper">
+        <div class="footer-left">京ICP备14056341号  汇聚融达网络科技有限公司</div>
+        <div class="footer-right">© 2015 财富派 All rights reserved</div>
+    </div>
+</div><!-- footerindex end -->
+
+</body>
+<script>
+	//分页
+    $(".tcdPageCode").createPage({
+        pageCount:6,
+        current:1,
+        backFn:function(p){
+            console.log(p);
+		//点击分页效果
+		searchHtml(parseInt(p),10);
+			
+        }
+    });
+</script>
+</html>

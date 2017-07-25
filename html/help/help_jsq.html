@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" /> 
+
+<title></title>
+
+<link rel="stylesheet" type="text/css" href="../../css/index.css" /><!-- index css -->
+<link rel="stylesheet" type="text/css" href="../../css/style.css" /><!-- style css -->
+<script type="text/javascript" src="../../js/jquery.min.js"></script><!-- jquery 类库 javascript -->
+<script type="text/javascript" src="../../js/public.js"></script><!-- public javascript -->
+<script type="text/javascript" src="../../js/person1.js"></script><!-- person1 javascript -->
+</head>
+
+<body>
+<!-- header start -->
+<!-- line2 start -->
+<div class="line2">
+	<div class="wrapper">
+        <ul class="lineright">
+            <li>400-061-8080</li>
+            <li><a href="login.html">登录</a> / <a href="register.html">注册</a></li>
+            <li><a href="help_index.html">帮助</a></li>
+        </ul>
+    </div>
+</div><!-- line2 start -->
+	
+<!-- navindex start -->
+<div class="navindex">
+    <div class="wrapper">
+    	<div class="navleft">
+        	<img src="../../images/finance_03.jpg" class="borderright" />
+            <img src="../../images/finance_06.jpg" />
+        </div>
+        <ul class="navright">
+            <li><a href="../../index.html">首页</a></li>
+            <!-- <li><a href="#">我要理财</a></li> -->
+            <li><a href="../financeList.html">我要借款</a></li>
+            <li><a href="../person/person1.html">账户中心</a></li> <li><a href="../about.html">关于我们</a></li>
+            <!-- <li><a href="#">门店加盟</a></li> -->
+        </ul>
+    </div>	
+</div><!-- navindex end -->
+<!-- header end -->
+
+<!-- tabp start 
+<div class="tabpul personindex clearFloat">
+	<!-- ftitle start 
+	<div class="ftitle_pre">
+    	<div class="ptitle clearFloat">
+			<ul class="tabulper wrapper clearFloat">
+				<li class="zheicon action"><a href="person1.html">账户总览</a></li>
+				<li data-id="0"  class="hengicon"><a href="#">我的理财</a><i></i></li>
+				<li data-id="1"  class="myjiek"><a href="#">我的借款</a><i></i></li>
+				<li data-id="2"  class="zijingl"><a href="fund_zj.html">资金管理</a><i></i></li>
+				<li data-id="3"  class="prexinxi"><a href="../infor/infor_1.html">个人信息</a><i></i></li>
+			</ul>
+		</div>
+	</div><!-- ftitle end -->
+	<!-- tab start 
+    <div class="tab pre_main clearFloat">
+		<div class="pre_maintitle">
+			<ul class="tabul2">
+				<li class="action_ri" ><a href="zh_center_cjzq_mx.html">出借债权</a><i></i></li>
+				<li data-id="table2"><a href="zh_center_lcjh.html">理财计划</a><i></i></li>
+			</ul>
+		</div>
+		<div class="pre_maintitle ">
+			<ul class="tabul2">
+				<li class="action_ri2">我的借款1<i></i></li>
+				<li>我的借款2<i></i></li>
+			</ul>
+		</div>
+		<div class="pre_maintitle preaction">
+			<ul class="tabul3 preaction">
+				<li class="action_ri390" ><a href="fund_zj.html">资金流水</a><i></i></li>
+				<li><a href="zh_center_ddcx.html">订单查询</a><i></i></li>
+				<li><a href="person2.1.html">充值</a><i></i></li>
+				<li><a href="person3.1.html">提现</a><i></i></li>
+<li><a href="person4.1.html">代金劵</a><i></i></li>
+				
+				<li><a href="person5.1.html">银行卡管理</a><i></i></li>
+			</ul>
+		</div>
+		<div class="pre_maintitle">
+			<ul class="tabul2">
+				
+				<li class="action_ri_infor "><a href="zh_center_ddcx.html">个人信息</a><i></i></li><li><a href="../person/infor_3.html">验证信息</a><i></i></li>
+				<li><a href="infor_2.html">密码管理</a><i></i></li>
+				<li><a href="infor_1.html">消息管理</a><i></i></li>
+				<li><a href="infor_4.html">邀请好友</a><i></i></li>
+			</ul>
+  		  </div>-->
+    </div>
+</div>
+<!-- tabp end -->
+<!-- nvaline start
+<div class="navline mt-0 wrapper clearFloat">
+<span><a href="#">年化收益</a></span>><span><a href="#">借款期限</a></span>><span>信用等级</span>
+</div>
+<!-- nvaline end -->
+
+<!-- ftitle start -->
+<div class="helptitle">
+	<h2 class="clearFloat">
+    	<ul class="tabul wrapper">
+        	<li class="action zheicon" data-id="tab1">出借计算器</li>
+        	<li data-id="tab2" class="hengicon">借款计算器</li>
+        </ul>
+    </h2>
+</div><!-- ftitle end -->
+
+<!-- finproject start -->
+<div class="tab bortab wrapper" id="tab1" >
+	<div class="bormoney">
+    	<span class="firstb">出借金额</span>
+    	<span class="second"><input type="text" id="pborrow" class="ipt-borrow" /></span>
+    	<span class="third">元</span>
+        <em class="c_red ml-100"></em>
+    </div>
+	<div class="bormoney">
+    	<span class="firstb">出借利率</span>
+    	<span class="four"><label><input type="radio" checked name="radio1"/>9%</label></span>
+    	<span class="four"><label><input type="radio"  name="radio1" />10%</label></span>
+    	<span class="four"><label><input type="radio"  name="radio1" />12%</label></span>
+    	<span class="four"><label><input type="radio"  name="radio1" />15%</label></span>
+    </div>
+	<div class="bormoney">
+    	<span class="firstb">出借期限</span>
+    	<span class="four"><label><input type="radio"  name="radio2" checked/>1期</label></span>
+    	<span class="four"><label><input type="radio" name="radio2"  />2期</label></span>
+    	<span class="four"><label><input type="radio" name="radio2"  />3期</label></span>
+    	<span class="four"><label><input type="radio"  name="radio2" />6期</label></span>
+    </div>
+	<div class="borcenter mt-30">
+    	<button class="btn btn-error jsbtn" id="login2" type="button">计算</button>
+    </div>
+    
+    <!-- bordetail start -->
+    <div class="bordetail display-none">
+    	<p class="tac">计算结果</p>
+        <p><span class="bfirst">出借金额</span><span class="blast">0.00元</span></p>
+        <p><span class="bfirst">获得利息</span><span class="blast">0.00元</span></p>
+        <p><span class="bfirst">回款总额</span><span class="blast c_red">0.00元</span></p>
+        <p class="tac">回款明细</p>
+        <table cellpadding="0" cellspacing="0" border="0" class="bortable">
+        	<tr>
+            	<td>回款期数</td>
+            	<td>应回本金</td>
+            	<td>应回利息</td>
+            	<td>应回总额</td>
+            	<td>剩余回款总额</td>
+            </tr>
+        	<tr>
+            	<td>1</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            </tr>
+        	<tr>
+            	<td>2</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            </tr>
+        	<tr>
+            	<td>3</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            </tr>
+        	<tr>
+            	<td>4</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            </tr>
+        </table>
+    </div><!-- bordetail end -->
+    
+</div>
+<!-- finproject end -->
+
+<!-- finproject start -->
+<div class="tab bortab wrapper display-none" id="tab2" >
+	<div class="bormoney">
+    	<span class="firstb">借款金额</span>
+    	<span class="second"><input type="text" id="ploanid" class="ipt-borrow" /></span>
+    	<span class="third">元</span>
+        <em class="c_red ml-100"></em>
+    </div>
+	<div class="bormoney">
+    	<span class="firstb">借款期限</span>
+    	<span class="four"><label><input type="radio" name="radio3"   checked />1期</label></span>
+    	<span class="four"><label><input type="radio" name="radio3"  />2期</label></span>
+    	<span class="four"><label><input type="radio" name="radio3"  />3期</label></span>
+    	<span class="four"><label><input type="radio" name="radio3"  />6期</label></span>
+    </div>
+	<div class="borcenter mt-30">
+    	<button class="btn btn-error jsbtn" id="loany" type="button">计算</button>
+    </div>
+    
+    <!-- bordetail start -->
+    <div class="bordetail display-none">
+    	<p class="tac">计算结果</p>
+        <p><span class="bfirst">借款金额</span><span class="blast">0.00元</span></p>
+        <p><span class="bfirst">借款总成本（利息+平台服务费）</span><span class="blast">0.00元</span></p>
+        <p><span class="bfirst">总还款额</span><span class="blast c_red">0.00元</span></p>
+        <p class="tac">还款明细</p>
+        <table cellpadding="0" cellspacing="0" border="0" class="bortable">
+        	<tr>
+            	<td>还款期数</td>
+            	<td>应还本金</td>
+            	<td>应还利息</td>
+            	<td>应还服务费</td>
+            	<td>应还总额</td>
+            	<td>提前还款结清金额</td>
+            </tr>
+        	<tr>
+            	<td>1</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            </tr>
+        	<tr>
+            	<td>2</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            </tr>
+        	<tr>
+            	<td>3</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            </tr>
+        	<tr>
+            	<td>4</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            	<td>0.00元</td>
+            </tr>
+        </table>
+    </div><!-- bordetail end -->
+</div>
+<!-- finproject end -->
+
+<!-- footer start -->
+<div class="footer">
+	<div class="wrapper clearFloat">
+        <!-- ulone start -->
+        <ul class="ulone clearFloat">
+            <li><a href="#">财富派</a></li>
+            <li><a href="#">公司介绍</a></li>
+            <li><a href="#">团队介绍</a></li>
+            <li><a href="#">网站公告</a></li>
+            <li><a href="#">加入我们</a></li>
+            <li class="none"><a href="#">联系我们</a></li>
+        </ul><!-- ulone end -->
+        
+        <!-- ultwo start -->
+        <ul class="ultwo clearFloat mr-20">
+            <li><span class="timeicon"></span>8:00-18:00</li>
+            <li><span class="emailicon mt-5"></span>8:00-18:00</li>
+            <li><span class="sel"></span>400-061-8080</li>
+        </ul><!-- ultwo start -->
+        
+    </div>
+        <!-- credibility start -->
+        <div class="credibility">
+            <a id='___szfw_logo___' href='https://search.szfw.org/cert/l/CX20150630010536010662' target='_blank'><img src='cert.jpg'></a>
+            <img src="../images/credibility/img2.png" />
+            <img src="../images/credibility/img3.png" />
+            <img src="../images/credibility/img4.png" />
+        </div><!-- credibility end -->
+        <!-- botterbottom srart -->
+        <div class="botterbottom">
+            京 ICP 备14051030号&nbsp;&nbsp;Copyright 2015 caifupad.com, All Rights Reserved
+        </div><!-- botterbottom end -->
+    
+<script type='text/javascript'>(function(){document.getElementById('___szfw_logo___').oncontextmenu = function(){return false;}})();</script>
+</div><!-- footer end -->
+</body>
+</html>

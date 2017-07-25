@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="keywords" content="" />
+<meta name="description" content="" /> 
+
+<title>财富派-账户中心</title>
+
+<link rel="stylesheet" type="text/css" href="../../css/index.css" /><!-- index css -->
+<link rel="stylesheet" type="text/css" href="../../css/style.css" /><!-- style css -->
+<script type="text/javascript" src="../../js/jquery.min.js"></script><!-- jquery 类库 javascript -->
+<script type="text/javascript" src="../../js/public.js"></script><!-- public javascript -->
+<script type="text/javascript" src="../../js/person1.js"></script><!-- person1 javascript -->
+</head>
+
+<body>
+<!-- header start -->
+	<!-- navtopbg start-->
+	<div class="toplink clearFloat">
+		<div class="wrapper">
+			<div class="floatLeft">
+				<ul class="topright floatRight">
+					<li class="borderright"><img src="../../images/new_icon/user_name.png" /><a href="login.html">user2015</a>&nbsp;&nbsp; |</li>
+					<li><img src="../../images/new_icon/user_05.png" /><a href="register.html">退出账号</a></li>
+				</ul>
+			</div>
+			<ul class="topright floatRight">
+				<li class="borderright"><a href="help/help_index.html">帮助中心</a></li>
+				<li><a href="register.html">新手引导</a></li>
+				<li class="ml-20"><img src="../../images/new_icon/kefu.png" /><a href="help/help_index.html">客服热线 400-061-8080 （9:00-21:00）</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- navtopbg end-->
+	<!-- navindex start -->
+	<div class="navindex">
+		<div class="wrapper">
+			<div class="navleft">
+				<a href="../index3.html"><img src="../../images/new_icon/logo.png" /></a>
+			</div>
+			<ul class="navright">
+				<li class="active"><a href="../index3.html">首页</a></li>
+				<li><a href="../financeList.html">我要借款</a></li>
+				<li><a href="../person/person1.html">账户中心</a></li>
+				 <li><a href="../about.html">关于我们</a></li>
+			</ul>
+		</div>	
+	</div>
+	<!-- navindex end -->
+<!-- header end -->
+<div class="clear_20"></div>
+<div class="wrapper new-wrapper">
+	<!-- ftitle start -->
+<div class="helptitle">
+	<h2 class="clearFloat jsq-tab">
+    	<ul class="tabul wrapper">
+        	<li class="action zheicon" data-id="tab1">出借计算</li>
+        	<li data-id="tab2" class="hengicon">借款计算</li>
+        </ul>
+    </h2>
+</div><!-- ftitle end -->
+
+<!-- finproject start -->
+<div class="tab bortab wrapper" id="tab1" >
+	<div class="bormoney">
+    	<span class="firstb">出借金额：</span>
+    	<span class="second"><input type="text" id="pborrow" class="ipt-borrow" /><i>元</i></span>
+    	<!-- <span class="third">元</span> -->
+        <em class="c_red ml-100"></em>
+    </div>
+	<div class="bormoney">
+    	<span class="firstb">出借利率：</span>
+    	<span class="four"><label><input type="radio"  name="radio1" checked />9%</label></span>
+    	<span class="four"><label><input type="radio"  name="radio1" />10%</label></span>
+    	<span class="four"><label><input type="radio"  name="radio1" />12%</label></span>
+    	<span class="four"><label><input type="radio"  name="radio1" />15%</label></span>
+    </div>
+	<div class="bormoney">
+    	<span class="firstb">出借期限：</span>
+    	<span class="four"><label><input type="radio"  name="radio2" checked />1期</label></span>
+    	<span class="four"><label><input type="radio"  name="radio2"  />2期</label></span>
+    	<span class="four"><label><input type="radio"  name="radio2"  />3期</label></span>
+    	<span class="four"><label><input type="radio"  name="radio2" />6期</label></span>
+    </div>
+	<div class="bormoney">
+    	<span class="firstb">还款方式：</span>
+    	<span class="four"><label><input type="radio"  name="radio4" checked />等额本金</label></span>
+    	<span class="four"><label><input type="radio" name="radio4"  />等额本息</label></span>
+    	<span class="four" style="width:30%"><label><input type="radio" name="radio4"  />周期付息到期还本</label></span>
+    </div>
+	<div class="borcenter mt-30">
+    	<button class="btn btn-error jsbtn" id="login2" type="button"><img src="../../images/new_icon/jsq_btn.png" /></button>
+    </div>
+    
+    <!-- bordetail start -->
+    <div class="bordetail display-none">
+    	<p class="tac">计算结果</p>
+        <p class="user_border border_bot"><span class="bfirst">出借金额</span><span class="blast">0.00元</span></p>
+        <p class="user_border border_bot"><span class="bfirst">获得利息</span><span class="blast">0.00元</span></p>
+        <p class="user_border"><span class="bfirst">回款总额</span><span class="blast c_red">0.00元</span></p>
+        <p class="tac"><a href="">查看详细></a></p>
+        <p class="user_bordetail_btn"><button>我要出借</button></p>
+        <p class="tac user_bordetail_title">回款明细</p>
+        <ul class="bordetail_ul">
+        	<li class="bordetail_ul_li">
+            	<ul>
+					<li>回款期数</li>
+					<li>应回本金（元）</li>
+					<li>应回利息（元）</li>
+					<li>应回总额（元）</li>
+				</ul>
+            </li>
+        	<li class="bordetail_ul_liborder">
+            	<ul>
+					<li>1</li>
+					<li>0.00元</li>
+					<li>0.00元</li>
+					<li>0.00元</li>
+				</ul>
+            </li>
+        	<li class="bordetail_ul_liborder">
+            	<ul>
+					<li>2</li>
+					<li>0.00元</li>
+					<li>0.00元</li>
+					<li>0.00元</li>
+				</ul>
+            </li>
+        	<li class="bordetail_ul_liborder">
+            	<ul>
+					<li>3</li>
+					<li>0.00元</li>
+					<li>0.00元</li>
+					<li>0.00元</li>
+				</ul>
+           </li>
+        	<li class="bordetail_ul_liborder">
+            	<ul>
+					<li>4</li>
+					<li>0.00元</li>
+					<li>0.00元</li>
+					<li>0.00元</li>
+				</ul>
+           </li>
+        </ul>
+    </div><!-- bordetail end -->
+    
+</div>
+<!-- finproject end -->
+
+<!-- finproject start -->
+<div class="tab bortab wrapper display-none" id="tab2" >
+	<div class="bormoney">
+    	<span class="firstb">借款金额：</span>
+    	<span class="second"><input type="text" id="ploanid" class="ipt-borrow" /><i>元</i></span>
+        <em class="c_red ml-100"></em>
+    </div>
+	<div class="bormoney">
+    	<span class="firstb">借款利率：</span>
+    	<span class="four"><label><input type="radio"  name="radio5" checked />9%</label></span>
+    	<span class="four"><label><input type="radio"  name="radio5" />10%</label></span>
+    	<span class="four"><label><input type="radio"  name="radio5" />12%</label></span>
+    	<span class="four"><label><input type="radio"  name="radio5" />15%</label></span>
+    </div>
+	<div class="bormoney">
+    	<span class="firstb">借款期限：</span>
+    	<span class="four"><label><input type="radio" name="radio3"   checked />1期</label></span>
+    	<span class="four"><label><input type="radio" name="radio3"  />2期</label></span>
+    	<span class="four"><label><input type="radio" name="radio3"  />3期</label></span>
+    	<span class="four"><label><input type="radio" name="radio3"  />6期</label></span>
+    </div>
+	<div class="bormoney">
+    	<span class="firstb">还款方式：</span>
+    	<span class="four"><label><input type="radio"  name="radio6" checked />等额本金</label></span>
+    	<span class="four"><label><input type="radio" name="radio6"  />等额本息</label></span>
+    	<span class="four" style="width:30%"><label><input type="radio" name="radio6"  />周期付息到期还本</label></span>
+    </div>
+	<div class="borcenter mt-30">
+    	<button class="btn btn-error jsbtn" id="loany" type="button"><img src="../../images/new_icon/jsq_btn.png" /></button>
+    </div>
+    
+    <!-- bordetail start -->
+    <div class="bordetail display-none">
+    	<p class="tac">计算结果</p>
+        <p class="user_border border_bot"><span class="bfirst">借款金额</span><span class="blast">0.00元</span></p>
+        <p class="user_border border_bot"><span class="bfirst">借款总成本（利息）</span><span class="blast">0.00元</span></p>
+        <p class="user_border"><span class="bfirst">还款总额</span><span class="blast c_red">0.00元</span></p>
+        <p class="tac"><a href="">查看详细></a></p>
+        <p class="user_bordetail_btn"><button>我要出借</button></p>
+        <p class="tac user_bordetail_title">还款明细</p>
+        <ul class="bordetail_ul">
+        	<li class="bordetail_ul_li">
+            	<ul>
+					<li>还款期数</li>
+					<li>应还本金（元）</li>
+					<li>应还利息（元）</li>
+					<li>应还总额（元）</li>
+				</ul>
+            </li>
+        	<li class="bordetail_ul_liborder">
+            	<ul>
+					<li>1</li>
+					<li>0.00元</li>
+					<li>0.00元</li>
+					<li>0.00元</li>
+				</ul>
+            </li>
+        	<li class="bordetail_ul_liborder">
+            	<ul>
+					<li>2</li>
+					<li>0.00元</li>
+					<li>0.00元</li>
+					<li>0.00元</li>
+				</ul>
+            </li>
+        	<li class="bordetail_ul_liborder">
+            	<ul>
+					<li>3</li>
+					<li>0.00元</li>
+					<li>0.00元</li>
+					<li>0.00元</li>
+				</ul>
+           </li>
+        	<li class="bordetail_ul_liborder">
+            	<ul>
+					<li>4</li>
+					<li>0.00元</li>
+					<li>0.00元</li>
+					<li>0.00元</li>
+				</ul>
+           </li>
+        </ul>
+    </div><!-- bordetail end -->
+</div>
+<div class="clear_100"></div>
+<!-- finproject end -->
+</div>
+<div class="clear_100"></div>
+<!-- footerindex start -->
+<div class="footer">
+	<div class="bottom3">
+		<div class="wrapper">
+			<ul class="footer-ul">
+				<h3>关于我们</h3>
+				 <li><a href="../about.html">关于我们</a></li>
+				 <li><a href="../about.html">关于我们</a></li>
+				 <li><a href="../about.html">关于我们</a></li>
+			</ul>
+			<ul class="footer-ul">
+				<h3>关于我们</h3>
+				 <li><a href="../about.html">关于我们</a></li>
+				 <li><a href="../about.html">关于我们</a></li>
+				 <li><a href="../about.html">关于我们</a></li>
+			</ul>
+			<ul class="footer-ul">
+				<h3>联系我们</h3>
+				<li>客服热线&nbsp;&nbsp;<b>400-000-6151</b></li>
+				<li>客服邮箱&nbsp;&nbsp;<a href="#" class="footer-email">service@mayitz.com</a></li>
+				<li>北京市朝阳区光华路SOHO2期B座11层</li>
+			</ul>
+		</div>
+		<div class="clear_0"></div>
+		<div class="wrapper">
+			<hr class="footer-line" />
+			<div class="b4">
+				<span class="b41"><i></i></span>
+				<span class="b42"><i></i></span>
+			</div>
+		</div>
+	</div>
+	
+	<div class="wrapper">
+		<div class="footer-left">京ICP备14056341号  汇聚融达网络科技有限公司</div>
+		<div class="footer-right">© 2015 财富派 All rights reserved</div>
+	</div>
+</div><!-- footerindex end -->
+</body>
+</html>

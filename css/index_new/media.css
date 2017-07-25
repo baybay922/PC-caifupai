@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+@media (max-width:1720px) and (min-width:767px){
+
+	.sRollNotice .dEye .la3{ display: none;}
+	.sRollNotice .dEye .uEye .lsum{ margin-top: 5px; }
+	.sRollNotice .dEye .uEye .lfirst{ margin-top: 10px;}
+}
+@media (max-width:1480px) and (min-width:767px){
+.sRollNotice .dEye .la1{
+	padding-top: 2%;
+margin-top: 5px;
+}.sRollNotice .dEye .uEye .lsum{
+	padding-top: 10px;
+}
+}
+
+@media (max-width:1420px) and (min-width:767px){
+	.sRollNotice .dEye .uEye .lbuttom a{margin-top: 0px;}
+}
+@media (max-width:1310px) and (min-width:767px){
+	.sRollNotice .dEye .uEye .NotLogin{ display: none;}
+	.sRollNotice .dEye .uEye .lsum{
+	display:none;
+}
+}
+@media (max-width:1200px){
+
+	.dRight .dNewGuide { height: 180px;}
+	.dBodyIndex .dLeft .dsafe span{ height: auto; text-align: center;}
+	.dBodyIndex .dLeft .dsafe span code{ display:inline-block; float: none; margin-top: 10px; text-align: center; margin-bottom: 20px;margin-left:auto; margin-right: auto;}
+	.dBodyIndex .dLeft .dsafe span.sone i,.dBodyIndex .dLeft .dsafe span.ssecond i,.dBodyIndex .dLeft .dsafe span.sthird i{ display:block; width:78px; float: none; height:78px; margin-top:27px; margin-left:auto; margin-right: auto;}
+}
+
+@media (max-width:1033px) and (min-width:767px){
+
+	.sRollNotice .dEye .lsum{ display: none;}
+}
+@media (max-width:980px) and (min-width:767px){
+	.sRollNotice .dEye .la1 {
+
+	padding-top: 0%;
+	margin-top: 0px;
+	}
+	.sRollNotice .dEye .uEye .lyear .srat{ font-size: 18px;}
+	.sRollNotice .dEye .uEye .lyear .srat code{ font-size: 18px;}
+
+}
+@media (max-width:992px){
+
+	.dFinancePlan{ margin-top: 0px;}
+	.dBottom .uTimDru{width: 40%;}
+	.dBottom .uScan{width: 30%;}
+	.dBottom .uscanlat{ border-right: none;}
+	.dBottom .uServer{  width: 100%;}
+
+	.header .dNav{ display: none; width: 100%; height: auto;}
+	.header .dlogo{width: 100%;}
+	.header .dlogo i{ display: inline-block; float: right; margin-right: 20px; cursor: pointer;}
+	.header .dNav .uNav{ width: 100%;}
+	.header .dNav .uNav li{ display: block; float: none; width: 100%; margin-left: 0;height: 50px;line-height: 50px;}
+	.header .dNav .uNav li a{ display: block; height: 47px; font-size: 16px; width: 100%;}
+	.linktop{ height: auto; width: 100%;}
+	.linktop .uWelcome,.linktop .uSevers{ display:line-block; float: left;  text-align: center; margin-left: auto; margin-right: auto;}
+	.dFinancePlan .uFinList li.lfifle a{ font-size: 12px;}
+	.dRight .dNewsQuesion .dNews .dNewsTitle .sNew-group .pOne a{ font-size: 14px;}
+	.dRight .dNewsQuesion .dNews .dNewsTitle .sNew-group .ptwo{overflow: hidden;white-space: nowrap;-o-text-overflow: ellipsis;text-overflow: ellipsis;}
+	.dRight .dNewsQuesion .dNews .dNewsTitle .sNew-group .pThree{ font-size: 8px;}
+
+	.dRight{padding-right: 5%;} 
+	.dBodyIndex .dLeft{ width:62%;}
+	.dFinancePlan h2 span,.dRight .dNewPaper h2 .sTitle,.dRight .dNewGuide h2{ font-size: 20px}
+	.dRight .dNewsQuesion h2{ font-size: 18px;}
+	.dBottom .uServer{ width: 100%; display: none;}
+	.dSidebar .uSide{ right: -12px;}
+	.dSidebar .uSide i{ margin-left: 5px;}
+	.dFinancePlan .uFinList li.ltwo{ color: #e72d4c; font-size: 20px;} 
+	.dSidebar .uSide>li em.eml12{  right: 9px;}
+
+}
+
+@media (max-width:767px){
+	.dFinancePlan .uFinTitle{ display: none;}
+	.dFinancePlan .uFinTitle li{ font-size: 10px;}
+	.dFinancePlan .uFinList li.lone{ width: 35%;}
+	.dFinancePlan .uFinList li.lone a{ font-size: 14px;}
+
+.dFinancePlan .uFinTitle li.lone,.dFinancePlan .uFinList li.lone{ width:60%;}
+.dFinancePlan .uFinTitle li.ltwo,.dFinancePlan .uFinList li.ltwo{ width:40%; text-align: center;}
+.dFinancePlan .uFinTitle li.lthree,.dFinancePlan .uFinList li.lthree{ width:55%; margin-left: 5%;}
+.dFinancePlan .uFinTitle li.lfore,.dFinancePlan .uFinList li.lfore{ width:60%; display: none;}
+.dFinancePlan .uFinTitle li.lfifle,.dFinancePlan .uFinList li.lfifle{ width:40%;}
+.dFinancePlan h2 span small{ font-size: 12px; margin-left: 5px;}
+.dFinancePlan .uFinList li{ height: 40px; line-height: 40px;}
+.dFinancePlan .uFinList li.lfifle a{ margin-top: 5px; height: 25px; line-height: 25px;}
+.dFinancePlan .uFinList li.lone i.iLi,.dFinancePlan .uFinList li.lone i.iJie{ margin-top: 10px;}
+
+	.header{ height: 80px; line-height: 80px;}
+.dFinancePlan h2 a,.dRight .dNewPaper h2 a,.dRight .dNewsQuesion .dNews .uNewsList li.lLookMore a{ margin-right: 10px;}
+
+	 .linktop .uWelcome,.linktop .uSevers{display:line-block; float: left; }
+
+	.linktop .linknone{ display: none!important;}
+	.header .dlogo img{ width: 230px;}
+	.sRollNotice .dEye{ position: static; width:100%; margin-top: 25px; margin-left: -15px;}
+	.dBottom .uTimDru{width: 100%;}
+	.dBottom .uScan{width: 50%;}
+	.dPut span{ display: block; float: none;}
+	.dPut{ text-align: center; height: auto; line-height: 30px;}
+	.dPut .ichengxin,.dPut .ixin{ display: inline-block; float: none;}
+
+	.dLeft{ width: 100%!important;}
+	.dRight{ width: 100%;}
+	.sRollNotice .dEye .uEye .lsum span{ width: 49%;}
+	.dBodyIndex .dLeft .dsafe span code small{ font-size: 10px;}
+
+	.dRight .dVedio{display: none;}
+	.dRight{padding-right: 0%;} 
+}
+
+@media (max-width:420px){
+	.dBodyIndex .dLeft .dsafe span code{ display: none;}
+	.dBodyIndex .dLeft .dsafe span i{ margin-bottom: 25px;}
+}
+
+
+
+
+
+
+
+
+
